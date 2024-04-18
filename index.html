@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card my-5">
+        <div class="card-header">
+          <label for="fileInput" class="form-label">Selecciona tu excel</label>
+          <input class="form-control" type="file" id="fileInput" accept=".xls,.xlsx" />
+        </div>
+        <div class="card-body overflow-auto" style="max-height: 80vh;">
+          <table class="table table-striped table-bordered" id="tb">
+            <thead class="text-center">
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
+                <div>
+
+                </div>
+            </tbody>
+          </table>
+        </div>
+        <div class="row text-center py-3">
+            <div class="col">
+                <button type="button" class="btn btn-primary" id="btnStart" disabled><b>Analizar</b></button>
+            </div>
+            <div class="col">
+              
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success" id="btnSave" disabled><b>Guardar</b></button>
+            </div>
+        
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="index.js"></script>
+    <!-- use version 0.20.2 -->
+
+    <script
+      lang="javascript"
+      src="https://cdn.sheetjs.com/xlsx-0.20.2/package/dist/xlsx.full.min.js"
+    ></script>
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+  </body>
+</html>
